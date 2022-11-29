@@ -1,4 +1,3 @@
-import React from 'react';
 import './intro.css';
 import icon from './icon.png';
 import Container from 'react-bootstrap/Container';

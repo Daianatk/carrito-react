@@ -6,3 +6,10 @@
 .home .articulos {
     list-style: none;
 }
+
+.texto-home {
+    color: white;
+    font-size: large;
+    text-align: center;
+    margin-top: 10px;
+}

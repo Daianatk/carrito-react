@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './componentes/navbar/navbar';
-import Footer from './componentes/footer/footer';
-import Home from './componentes/home/home';
-import Productos from './componentes/productos/productos';
-import Contacto from './componentes/contacto/contacto';
+import Menu from './componentes/Navbar/Navbar';
+import Footer from './componentes/Footer/Footer';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import Descuentos from './componentes/Descuentos/Descuentos';
+import Contacto from './componentes/Contacto/Contacto';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -13,12 +13,12 @@ function App() {
         <Menu />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <ItemListContainer greeting = {'Bienvenidos a la tienda'} />
           </Route>
-          <Route exact path="/productos">
-            <Productos />
+          <Route exact path="/Descuentos">
+            <Descuentos />
           </Route>
-          <Route exact path="/contacto">
+          <Route exact path="/Contacto">
             <Contacto />
           </Route>
         </Switch>

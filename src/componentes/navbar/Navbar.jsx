@@ -1,6 +1,6 @@
-import React from 'react';
 import './navbar.css';
 import Container from 'react-bootstrap/Container';
+import CartWidget from '../CartWidget/CartWidget';
 import { Nav, Navbar } from 'react-bootstrap';
 
 const Menu = () => {
@@ -10,9 +10,10 @@ const Menu = () => {
             <Container>
                 <Navbar.Brand href="/">Home</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="/Productos">Productos</Nav.Link>
+                    <Nav.Link href="/Descuentos">Descuentos</Nav.Link>
                     <Nav.Link href="/contacto">Contacto</Nav.Link>
                 </Nav>
+                <CartWidget number = {'1'}/>
             </Container>
         </Navbar>
     );

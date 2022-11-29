@@ -1,16 +1,16 @@
-import React from 'react';
-import './home.css';
-import Intro from '../intro/intro';
+import './ItemListContainer.css';
+import Intro from '../Intro/Intro';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Home = () => {
+const ItemListContainer = ({greeting}) => {
     return(
         <div className="home">
-            <Intro titulo="Carrito de Compras" />
+            <Intro titulo="Tienda Libre" />
             <Container>
+                <h1 className='texto-home'>{greeting}</h1>
                 <h2>Productos Principales</h2>
                 <Row>
                     <Col xs={12} sm={4}>
@@ -35,4 +35,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default ItemListContainer;
