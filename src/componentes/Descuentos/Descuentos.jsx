@@ -6,7 +6,7 @@ const Descuentos = () => {
         <div>
             Aqui van los descuentos
         </div>
-    );
+    )
 }
 
 export default Descuentos;
