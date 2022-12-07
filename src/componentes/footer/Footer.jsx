@@ -2,8 +2,8 @@ import './footer.css';
 
 const Footer = () => {
     return(
-        <footer>
-            All Rights Reserved. ©2022 Carrito en React. Design By : DayCampos
+        <footer className='text-center'>
+            All Rights Reserved ©2022 - Tienda Libre - Design By : DayCampos
         </footer>
     );
 }
