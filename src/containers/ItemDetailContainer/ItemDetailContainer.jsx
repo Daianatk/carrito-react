@@ -1,9 +1,8 @@
 import './ItemDetailContainer.css';
-import Intro from '../Intro/Intro';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { gFetch } from '../../helpers/gFetch';
-import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
   const [ products, setProduct ] = useState({})

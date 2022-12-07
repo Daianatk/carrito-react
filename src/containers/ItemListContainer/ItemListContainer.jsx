@@ -1,12 +1,12 @@
 import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
-import Intro from '../Intro/Intro';
+import Intro from '../../components/Intro/Intro';
 import { Link, useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { gFetch } from '../../helpers/gFetch';
-import ItemList from '../ItemList/ItemList';
+import ItemList from '../../components/ItemList/ItemList';
 
 const ItemListContainer = ({greeting}) => {
     const [ products, setProduct ] = useState([])

@@ -1,12 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './componentes/Navbar/Navbar';
-import Footer from './componentes/Footer/Footer';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import Descuentos from './componentes/Descuentos/Descuentos';
-import Contacto from './componentes/Contacto/Contacto';
-import Cart from './componentes/Cart/Cart';
+import Menu from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
+import Descuentos from './components/Descuentos/Descuentos';
+import Contacto from './components/Contacto/Contacto';
+import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
