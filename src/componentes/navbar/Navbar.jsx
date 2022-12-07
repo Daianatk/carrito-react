@@ -18,7 +18,11 @@ const Menu = () => {
                     <Nav.Link href="/descuentos">Descuentos</Nav.Link>
                     <Nav.Link href="/contacto">Contacto</Nav.Link>
                 </Nav>
-                <CartWidget number = {'1'}/>
+                <Nav>
+                    <Nav.Link className='btn btn-link' href='/cart'>
+                        <CartWidget number = {'0'}/>
+                    </Nav.Link>
+                </Nav>
             </Container>
         </Navbar>
     );

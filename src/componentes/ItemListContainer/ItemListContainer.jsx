@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { gFetch } from '../../helpers/gFetch';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = ({greeting}) => {
     const [ products, setProduct ] = useState([])
@@ -38,31 +39,7 @@ const ItemListContainer = ({greeting}) => {
                         { loading ?
                             <p>Loading...</p>
                             :
-                            products.map( products => <div style={{ marginLeft: 100}}
-                            className='col-md-3'
-                            key={products.id}
-                            >
-                                <div className="card w-100 m-2 card text-center">
-                                    <div className="card-header">
-                                        {`${products.name} - ${products.categoria}`}
-                                    </div>
-                                    <div className="card-body">
-                                        <img src={products.foto} alt="imagen-referencial" className="w-100" />
-                                        {products.price}
-                                    </div>
-                                    <div className="card-footer">
-                                        <Link to= {`/detalle/${products.id}`}>
-                                            <button className='btn btn-warning btn-block'>
-                                            + Detalle del producto
-                                            </button>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                            </div>
-                                
-                                
-                                )
+                            <ItemList products = { products } />
 
                         }
                     </Col>
