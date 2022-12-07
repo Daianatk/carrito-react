@@ -15,5 +15,6 @@
 }
 
 .home .products {
-    display: inline-table;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
