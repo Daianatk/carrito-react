@@ -1,6 +1,7 @@
 import './navbar.css';
 import Container from 'react-bootstrap/Container';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 import { Nav, Navbar, NavLink } from 'react-bootstrap';
 
 const Menu = () => {
@@ -10,16 +11,16 @@ const Menu = () => {
             <Container>
                 <Navbar.Brand href="/">Home</Navbar.Brand>
                 <Nav className="me-auto">
-                    <NavLink class="btn btn-link" href="/categoria/laptop">Laptops</NavLink>
-                    <NavLink class="btn btn-link" href="/categoria/impresora">Impresoras</NavLink>
-                    <NavLink class="btn btn-link" href="/categoria/celular">Celulares</NavLink>
-                    <NavLink class="btn btn-link" href="/categoria/desktop">Desktop</NavLink>
-                    <NavLink class="btn btn-link" href="/categoria/tv">TV</NavLink>
-                    <Nav.Link href="/descuentos">Descuentos</Nav.Link>
-                    <Nav.Link href="/contacto">Contacto</Nav.Link>
+                    <NavLink as= {Link} class="btn btn-link" to="/categoria/laptop">Laptops</NavLink>
+                    <NavLink as= {Link} class="btn btn-link" to="/categoria/impresora">Impresoras</NavLink>
+                    <NavLink as= {Link} class="btn btn-link" to="/categoria/celular">Celulares</NavLink>
+                    <NavLink as= {Link} class="btn btn-link" to="/categoria/desktop">Desktop</NavLink>
+                    <NavLink as= {Link} class="btn btn-link" to="/categoria/tv">TV</NavLink>
+                    <Nav.Link as= {Link} to="/descuentos">Descuentos</Nav.Link>
+                    <Nav.Link as= {Link} to="/contacto">Contacto</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link className='btn btn-link' href='/cart'>
+                    <Nav.Link as= {Link} className='btn btn-link' to='/cart'>
                         <CartWidget number = {'0'}/>
                     </Nav.Link>
                 </Nav>
