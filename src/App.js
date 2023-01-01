@@ -8,6 +8,7 @@ import Descuentos from './components/Descuentos/Descuentos';
 import Contacto from './components/Contacto/Contacto';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartContextProvider } from './context/CartContext';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
   return ( 
     <BrowserRouter>
+        <CartContextProvider>
         <Menu />
         <Routes>
           <Route path="/" element= {<ItemListContainer greeting = {saludo} />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="/cart" element= {<Cart />} />
         </Routes>
         <Footer />
+        </CartContextProvider>
     </BrowserRouter>    
   );
 }

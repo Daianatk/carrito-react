@@ -1,10 +1,19 @@
-import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useCartContext } from '../../context/CartContext'
+import ItemCount from '../ItemCount/ItemCount'
+
 
 const ItemDetail = ({products}) => {
-    const onAdd = (count)=> {
-        console.log('La Cantidad seleccionada es: ', count)
-      }
+  const [isCant, setIsCant ] = useState(false)
+
+  const {  agregarCarrito} = useCartContext()
+
+  const onAdd = (cant) => {
+      console.log('la cantidad seleccionada es: ',cant)
+      agregarCarrito( { ...products, cant } )
+      setIsCant(true)
+  }
 
   return (
     <div className='card text-center m-5 p-5'>
@@ -14,13 +23,29 @@ const ItemDetail = ({products}) => {
           <h3>Nombre: {products.name}</h3>
           <h3>Categoria: {products.categoria}</h3>
           <h3>Precio: {products.price}</h3>
+          <h3>Stock: {products.stock}</h3>
         </div>
         <div className="col">
+        {isCant ?
+                    
+                    <>
+                        <Link to="/cart">
+                            <button className='btn btn-outline-primary'>Ver el Carrito</button>
+
+                        </Link>
+                        <Link to="/">
+                            <button className='btn btn-outline-success'>Continuar Comprando </button>
+                        </Link>
+                    </>
+                
+                :
+
           <ItemCount 
-                stock={10} 
+                stock={products.stock} 
                 initial={1} 
                 onAdd={onAdd}
           />
+          }
         </div>
       </div>
     </div>
