@@ -21,11 +21,8 @@
 
 ### Sección Home:
 
-- Muestra todos los productos a vender del emprendedor.
-- Muestra el filtrado de productos Ryzen y Intel por separado.
-- Si los productos mostrados estan agotados aparecerá la imagen del producto griss con la palabra "unavailable".
-- Si se intenta agregar un producto agotado aparecera un PopUp donde indica que el producto esta agotado.
-- Al agotarse el stock de los productos, estos cambian a agotado automaticamente.
+- Muestra todos los productos en venta.
+- Muestra el filtrado de productos por separado.
 
 ### Detalle del Producto:
 
@@ -40,16 +37,15 @@
 
 - En el CartSop se muestra los productos agregados al carrito para visualizar la cantidad y el precio total de lo que se va comprar.
 - Se puede eliminar los productos.
-- Se puede volver a la pantalla de Home sin perder los objetos en el CartShop.
-- Se puede limpiar el CartShop por completo.
+- Se puede volver a la pantalla de Home sin perder los objetos en el Carrito.
+- Se puede limpiar el Carrito por completo.
 - Finalizar la compra de productos.
 
 ### CheckOut:
 
 - Pide llenar un formulario con los datos para el envio de la compra.
 - El formulario no se puede enviar si no estan todos los campos llenos.
-- Si la operación fue exitosa se le otorgara una orden de compra en codigo.
-- Al finalizar la compra el CartShop queda vacio y puedes volver al Home a seguir comprando.
+- Al finalizar la compra el Carrito queda vacio y puedes volver al Home a seguir comprando.
 
 ## Estructura de firebase
 En firebase se tiene una estructura de los datos de la siguiente forma:
