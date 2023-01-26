@@ -1,7 +1,6 @@
 import './ItemDetailContainer.css';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-//import { gFetch } from '../../helpers/gFetch';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import Loading from '../../components/Loading/Loading';
 import { doc, getDoc, getFirestore } from "firebase/firestore";
@@ -11,13 +10,6 @@ const ItemDetailContainer = () => {
   const [ loading, setLoading ] = useState(true)
 
   const { idProducts } = useParams()
-
-  //useEffect(()=>{
-    //gFetch()
-    //.then(respProd => setProduct(respProd.find(prod => prod.id === idProducts)))
-    //.catch(err => (err))
-    //.finally(()=> setLoading(false))
-  //})
 
   useEffect(()=>{        
     const db = getFirestore()

@@ -1,7 +1,7 @@
 import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
 import Intro from '../../components/Intro/Intro';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,25 +10,10 @@ import ItemList from '../../components/ItemList/ItemList';
 
 const ItemListContainer = ({greeting}) => {
     const [ products, setProduct ] = useState([])
-    //const [ product, setProduct ] = useState({})
     const [ loading, setLoading ] = useState(true)
 
 
     const { id } = useParams()
-
-    //useEffect(()=>{
-       // if (id) {
-        //gFetch()
-        //.then(data => setProduct(data.filter(products => products.categoria === id)))
-        //.catch(err=> (err))
-        //.finally(()=> setLoad(false))
-    //} else {
-      //  gFetch()
-        //.then(data => setProduct(data))
-        //.catch(err=> (err))
-        //.finally(()=> setLoad(false))
-   // }
-    //}, [id])
 
     useEffect(()=>{
         const db = getFirestore()
@@ -47,7 +32,7 @@ const ItemListContainer = ({greeting}) => {
            
             getDocs(queryCollection)
             .then(data => setProduct( data.docs.map(products => ({ id: products.id,...products.data()}) ) ) )
-            .catch(err => console.log())
+            .catch(err => console.log(err))
             .finally(()=> setLoading(false))   
         }      
    
@@ -72,8 +57,6 @@ const ItemListContainer = ({greeting}) => {
                     </Col>
                 </Row>
             </Container>
-
-            <Link to="/contacto">Ir a contacto!</Link>
         </div>
     );
 }

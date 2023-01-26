@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const Item = memo(
 
     ({ products }) => {
-        console.log('item')
 
   return (
     <div style={{ marginLeft: 100}}
