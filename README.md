@@ -16,7 +16,7 @@
 ### NavBar:
 
 - Puedes navegar a las distintas secciones en forma SPA.
-- Secciones a mostrar: Home / Categoria / CartShop
+- Secciones a mostrar: Home / Categoria / Cart
 - Muestra el carrito de compras con la cantidad de productos cuando este tenga algun producto dentro.
 
 ### Sección Home:
