@@ -97,4 +97,4 @@ Para ver el demo visite el siguiente enlace: [Tienda Libre]( https://rococo-kelp
 - Descomprímalo e una ubicación conveniente
 - Ábralo con Visual Studio Code
 - Ejecute en la carpeta del proyecto el comando *npm install*
-- Por último, ejecute el comando *npm run dev*
+- Por último, ejecute el comando *npm start*
