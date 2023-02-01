@@ -9,7 +9,7 @@
 
 1. Debe clonar el repositorio utlizando git clone https://github.com/Daianatk/carrito-react
 2. Luego deberá instalar todas las dependencias del proyecto, para eso deberá ejecutar npm install (también puede utilizar npm i)
-3. Por último, puede ejecutar el proyecto y realizar las pruebas utilizando npm start. Si no desea instalar el proyecto, puede utilizarlo ingresando al siguiente enlace: https://rococo-kelpie-bbbb65.netlify.app/
+3. Por último, puede ejecutar el proyecto y realizar las pruebas utilizando npm start. Si no desea instalar el proyecto, puede utilizarlo ingresando al siguiente enlace: https://roaring-jalebi-a6f11b.netlify.app/
 
 ## Funcionalidad del Proyecto: 
 
