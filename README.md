@@ -9,7 +9,7 @@
 
 1. Debe clonar el repositorio utlizando git clone https://github.com/Daianatk/carrito-react
 2. Luego deberá instalar todas las dependencias del proyecto, para eso deberá ejecutar npm install (también puede utilizar npm i)
-3. Por último, puede ejecutar el proyecto y realizar las pruebas utilizando npm start. Si no desea instalar el proyecto, puede utilizarlo ingresando al siguiente enlace: https://roaring-jalebi-a6f11b.netlify.app/
+3. Por último, puede ejecutar el proyecto y realizar las pruebas utilizando npm start. Si no desea instalar el proyecto, puede utilizarlo ingresando al siguiente enlace: https://celebrated-souffle-ad56f0.netlify.app/
 
 ## Funcionalidad del Proyecto: 
 
@@ -37,9 +37,10 @@
 
 - En el CartSop se muestra los productos agregados al carrito para visualizar la cantidad y el precio total de lo que se va comprar.
 - Se puede eliminar los productos.
-- Se puede volver a la pantalla de Home sin perder los objetos en el Carrito.
+- Se puede volver a la pantalla de Home.
 - Se puede limpiar el Carrito por completo.
 - Finalizar la compra de productos.
+- El cliente visualiza su número de compra.
 
 ### CheckOut:
 
@@ -89,7 +90,7 @@ Las dependencias usadas en este proyecto son las siguientes:
 |react-router-dom |6.4.4|
 
 ## Demo Online
-Para ver el demo visite el siguiente enlace: [Tienda Libre]( https://rococo-kelpie-bbbb65.netlify.app/)
+Para ver el demo visite el siguiente enlace: [Tienda Libre]( https://celebrated-souffle-ad56f0.netlify.app/)
 
 ## Prueba Local
 - Para probarlo en local

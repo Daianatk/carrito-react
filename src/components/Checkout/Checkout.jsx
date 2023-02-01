@@ -1,13 +1,12 @@
 import { useCartContext } from '../../context/CartContext'
 import { useState, useEffect } from 'react'
-import { CartFinal } from '../CartFinal/CartFinal'
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom'
-import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
   
   const [ dataForm, setFromData ] = useState({
+    id: '',
     name: '',
     email: '',
     emailConfirm: '',
@@ -15,6 +14,7 @@ const Checkout = () => {
   })
 
   const [errorForm, setErrorForm] = useState({ 
+    id: '',
     name: '', 
     email: '', 
     emailConfirm: '', 
@@ -41,7 +41,6 @@ const Checkout = () => {
 
     const db =  getFirestore()
     const queryCollection = collection(db, 'orders')
-    console.log(dataForm)
 
     addDoc(queryCollection, order)
     .then(resp => { navigate(`/cartfinal/${resp.id}`) })
